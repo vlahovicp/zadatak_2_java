@@ -2,6 +2,7 @@ package hr.king.akademija;
 
 import hr.king.akademija.generator.BasicPasswordGenerator;
 import hr.king.akademija.generator.PasswordGenerator;
+import hr.king.akademija.generator.SpecificGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        PasswordGenerator passwordGenerator = new BasicPasswordGenerator();
+        PasswordGenerator passwordGenerator = new SpecificGenerator();
 
         List<String> passwords = new ArrayList<>();
 
